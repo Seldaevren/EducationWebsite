@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./global";
+
+@mixin tablet{
+
+     @media (max-width:972px){
+    @content;
+     }
+}
+
+
+@mixin mobile{
+    @media (min-width:300px) and (max-width:500px){
+        @content;
+    }
+}

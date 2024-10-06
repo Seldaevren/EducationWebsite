@@ -1,0 +1,45 @@
+@import "./variables";
+@import "./global";
+@import"./responsive";
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    text-align: center;
+    margin: 50px 200px;
+    gap: 3rem;
+  @include mobile{
+    margin: 50px 5px;
+  }
+
+    .box{
+
+        h6{
+            @extend .transition;  
+            cursor: pointer;
+            &:hover{
+                color: $main-color;
+            } 
+        }
+        .img-{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+          
+            img{
+               width: 100%;
+               display: block;
+               cursor: pointer;
+            @extend .transition;
+               &:hover{
+                transform: scale(1.2);
+               }
+               
+            }
+        }
+      
+    }
+}

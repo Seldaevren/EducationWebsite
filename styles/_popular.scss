@@ -1,0 +1,67 @@
+@import "./variables";
+@import "./global";
+@import"./responsive";
+
+
+.p-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    margin: 40px 200px;
+    @include mobile{
+      margin: 40px 50px;
+    }
+    
+    .p-box{
+        
+        position: relative;
+        margin: 20px 0;
+     
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: brightness(70%);
+            display: block;
+            @extend .transition;
+            &:hover {
+              transform: scale(1.04);
+              cursor: pointer;
+            }
+          }
+       .p-text{
+        position: absolute;
+         top:220px;
+         a{
+        display: block;
+        color: $text-color;
+        font-size: 10px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        i{
+            color: $main-color;
+            margin-right: 5px;
+        }
+        }
+       }
+    }
+}
+
+.center-text {
+    text-align: center;
+    h2 {
+      font-size: $h2-font;
+      font-weight: 800;
+      @include mobile{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .center-btn {
+    text-align: center;
+    margin-top: 4rem;
+  }

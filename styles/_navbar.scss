@@ -1,0 +1,89 @@
+@import "./variables";
+@import "./global";
+@import"./responsive";
+
+
+.navbar{
+@extend .flex ;
+position: fixed;
+justify-content: space-between;
+background-color: transparent;
+width: 100%;
+top:0;
+left:0;
+padding: 20px 13px;
+z-index: 5000;
+
+.logo{
+    h1{
+    font-size: 32px;
+    span{
+        color: $main-color;
+    }
+    @include tablet{
+        font-size: 20px;
+        flex-wrap: nowrap
+        }
+
+
+    }
+    
+
+
+}
+
+.menu{
+    @extend .flex;
+    margin-right: 30px;
+
+   
+
+    li{
+        margin-right: 20px;
+        font-size: 12px;
+        cursor: pointer;
+        @extend .transition;
+        &:hover{
+         color: $main-color;
+         transform: translateY(-2px);
+        }
+        @include tablet{
+            display:none;
+            }
+
+    }
+    
+
+    
+}
+.icons{
+    @include mobile{
+        display: none;
+    }
+
+   a{
+    color: $text-color;
+    font-size: 13px;
+    margin-right: 10px;
+    @extend .transition;
+   
+
+    &:hover{
+        transform: translateY(-5px);
+        color: $main-color;
+      
+    }
+
+   
+  i{
+    @extend .transition;
+    &:hover{
+        color: $main-color;
+        transform: translateY(-5px);
+    }
+  }
+    
+   }
+
+}
+}

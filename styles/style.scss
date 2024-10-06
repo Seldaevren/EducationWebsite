@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "./variables";
+@import "./navbar";
+@import "./global";
+@import "./home";
+@import "./courses";
+@import "./aboutus";
+@import "./popular";
+@import "./contact";
+@import  "./footer";
+@import "./responsive";
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none
+
+
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  
+}
+
+.btn{
+  padding: 10px 30px;
+  background-color: $main-color;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  color: $bg-color;
+  font-weight: 600;
+  cursor: pointer;
+  @extend .transition;
+  &:hover{
+    background-color: transparent;
+    border: 1px solid $text-color;
+    color: $text-color;
+    transform: translateX(5px);
+  }
+}
