@@ -7,7 +7,6 @@ The Education Website project is a responsive platform developed using HTML, CSS
 
 - HTML for structure.
 - CSS for styling and layout.
-- JavaScript for dynamic content and interactivity.
 - SCSS is a CSS preprocessor that adds powerful features like variables and nesting for more efficient styling.
 
 # Preview
